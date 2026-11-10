@@ -10,12 +10,15 @@
     "TZ": "America/New_York",
     "PIXELFLUX_WAYLAND": "false"
   },
-  "forwardPorts": [3000],
+  "forwardPorts":,
   "portsAttributes": {
     "3000": {
       "label": "Webtop Desktop (Audio Enabled)",
       "onAutoForward": "openBrowser"
     }
   },
+  "overrideCommand": false
+}
+
   "overrideCommand": false
 }
