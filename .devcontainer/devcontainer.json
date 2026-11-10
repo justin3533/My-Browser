@@ -1,3 +1,4 @@
+
 {
   "name": "Zero-Latency Audio Desktop",
   "image": "ghcr.io/linuxserver/webtop:ubuntu-xfce",
@@ -10,7 +11,9 @@
     "TZ": "America/New_York",
     "PIXELFLUX_WAYLAND": "false"
   },
-  "forwardPorts":,
+  "forwardPorts": [
+    3000
+  ],
   "portsAttributes": {
     "3000": {
       "label": "Webtop Desktop (Audio Enabled)",
@@ -20,5 +23,3 @@
   "overrideCommand": false
 }
 
-  "overrideCommand": false
-}
