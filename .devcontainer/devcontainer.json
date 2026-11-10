@@ -1,0 +1,21 @@
+{
+  "name": "Zero-Latency Audio Desktop",
+  "image": "ghcr.io/linuxserver/webtop:ubuntu-xfce",
+  "runArgs": [
+    "--shm-size=1gb"
+  ],
+  "containerEnv": {
+    "PUID": "1000",
+    "PGID": "1000",
+    "TZ": "America/New_York",
+    "PIXELFLUX_WAYLAND": "false"
+  },
+  "forwardPorts": [3000],
+  "portsAttributes": {
+    "3000": {
+      "label": "Webtop Desktop (Audio Enabled)",
+      "onAutoForward": "openBrowser"
+    }
+  },
+  "overrideCommand": false
+}
